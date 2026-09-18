@@ -122,7 +122,7 @@ button { border: 0; }
 .volume-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .volume-card { display: flex; flex-direction: column; min-height: 615px; overflow: hidden; border: 1px solid rgba(7,18,61,.13); border-radius: 6px; background: white; box-shadow: 8px 10px 0 rgba(7,18,61,.08); transition: transform 220ms var(--ease-out), box-shadow 220ms var(--ease-out); }
 .volume-card:hover { box-shadow: 12px 15px 0 rgba(7,18,61,.1); transform: translateY(-4px); }
-.volume-card-art { position: relative; overflow: hidden; min-height: 390px; background: var(--space-800); }
+.volume-card-art { position: relative; overflow: hidden; height: 460px; background: var(--space-800); }
 .volume-card-art img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .volume-card-featured .volume-card-art img { object-position: center top; }
 .volume-number { position: absolute; top: 15px; left: 16px; display: grid; width: 39px; height: 39px; place-items: center; border: 2px solid var(--orbit-yellow); border-radius: 50%; background: var(--signal-red); color: white; font-family: var(--display); font-size: 14px; box-shadow: 3px 4px 0 rgba(7,18,61,.4); }
@@ -277,7 +277,7 @@ button { border: 0; }
   .cover-image { width: min(100%, 420px); }
   .hero-copy h1 { font-size: clamp(54px, 7.4vw, 76px); }
   .volume-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .volume-card-art { min-height: 330px; }
+  .volume-card-art { height: 440px; }
   .volume-card-copy { min-height: 280px; }
   .volume-card-featured .volume-card-art img { object-position: center 20%; }
   .why-inner { grid-template-columns: 1fr .8fr; }
@@ -311,7 +311,7 @@ button { border: 0; }
   .section-intro-split { margin-bottom: 38px; }
   .volume-grid { grid-template-columns: 1fr; }
   .volume-grid { grid-template-columns: 1fr; }
-  .volume-card-art { min-height: 350px; }
+  .volume-card-art { height: 500px; }
   .encyclopedia-art-wrap { width: min(100%, 530px); margin: 0 auto; }
   .encyclopedia-copy { max-width: 590px; }
   .elliott-grid { gap: 55px; }
@@ -349,7 +349,7 @@ button { border: 0; }
   .section-intro h2, .encyclopedia-copy h2, .elliott-copy h2, .why-heading h2, .faq-intro h2, .club-copy h2 { font-size: clamp(43px, 12.4vw, 60px); }
   .section-intro-split > p { font-size: 15px; }
   .volume-card { grid-template-columns: 1fr; }
-  .volume-card-art { min-height: 350px; }
+  .volume-card-art { height: 390px; }
   .volume-card-copy { min-height: 0; padding: 26px 24px 27px; }
   .volume-card-copy h3 { font-size: 28px; }
   .encyclopedia-art { border-width: 3px; }
