@@ -21,7 +21,17 @@ import { toast } from "sonner";
 const coverImage = "/assets/ebook-cover-page-clear.png";
 const heroArtwork = "/assets/whys-hero-stars.png";
 const volume2Cover = "/assets/ebook-cover-volume-2-clear.png";
-const toddlersCover = "/assets/ebook-cover-toddlers-flat.png";
+const toddlersCover = "/assets/ebook-cover-toddlers-clear.png";
+const samplePages = [
+  {
+    src: "/assets/sample-pages-volume-2.png",
+    alt: "Sample pages from Volume 2 with colorful visual answers",
+  },
+  {
+    src: "/assets/sample-pages-first-wonders.png",
+    alt: "Sample pages from First Wonders for little learners",
+  },
+];
 const kidsArtwork = "/assets/learning-question-art.png";
 const starbookMark = "/assets/whys-starbook-mark.png";
 
@@ -131,8 +141,13 @@ export default function Home() {
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [openFaq, setOpenFaq] = useState(0);
+  const [samplePage, setSamplePage] = useState(-1);
 
   const closeMenu = () => setMenuOpen(false);
+
+  const turnPage = () => {
+    setSamplePage((current) => (current + 1) % (samplePages.length + 1));
+  };
 
   const handleSignup = (event: FormEvent<HTMLFormElement>) => {
     if (!email.trim() || !email.includes("@")) {
@@ -250,20 +265,38 @@ export default function Home() {
               </div>
               <div className="cover-shadow" />
 
-              <img
-                className="cover-image"
-                src={coverImage}
-                alt="100,000 Whys: A Full-Color Illustrated Encyclopedia book cover"
-              />
+              <div className={`hero-book-viewer ${samplePage >= 0 ? "is-open" : ""}`}>
+                <img
+                  className="sample-page-image"
+                  src={samplePage >= 0 ? samplePages[samplePage].src : samplePages[0].src}
+                  alt={samplePage >= 0 ? samplePages[samplePage].alt : ""}
+                  aria-hidden={samplePage < 0}
+                />
+                <img
+                  className="cover-image"
+                  src={coverImage}
+                  alt="100,000 Whys: A Full-Color Illustrated Encyclopedia book cover"
+                />
+              </div>
 
               <div className="floating-note note-top">
                 <Star size={15} fill="currentColor" /> Learn something
                 surprising.
               </div>
 
-              <div className="floating-note note-bottom">
-                Turn the page <ArrowRight size={14} />
-              </div>
+              <button
+                className="floating-note note-bottom page-turn-button"
+                type="button"
+                onClick={turnPage}
+                aria-label={samplePage < 0 ? "Open a sample page" : "Turn to the next sample page"}
+              >
+                {samplePage < 0
+                  ? "Turn the page"
+                  : samplePage < samplePages.length - 1
+                    ? "Next page"
+                    : "Close the book"}
+                <ArrowRight size={14} />
+              </button>
             </div>
           </div>
 
