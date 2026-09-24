@@ -21,7 +21,7 @@ import { toast } from "sonner";
 const coverImage = "/assets/ebook-cover-page-clear.png";
 const heroArtwork = "/assets/whys-hero-stars.png";
 const volume2Cover = "/assets/ebook-cover-volume-2-clear.png";
-const toddlersCover = "/assets/ebook-cover-toddlers-clear.png";
+const toddlersCover = "/assets/toddler-first-wonders-flat-cover.png";
 const samplePages = [
   {
     src: "/assets/sample-pages-volume-2.png",
