@@ -39,77 +39,77 @@ const faqs = [
   {
     question: "What age group are the books for?",
     answer:
-      "The books are created for children and curious young readers. The exact recommended age range can be found on each individual book page.",
+      "The original 100,000 Whys books are best for curious readers ages 6–13. First Wonders was created especially for younger children ages 2–6.",
   },
   {
     question: "Does the book literally contain 100,000 questions?",
     answer:
-      "100,000 Whys represents the idea of seemingly endless curiosity and the enormous number of questions children can ask about the world.",
+      "Not literally! The name celebrates the endless stream of questions children ask. One answer often sparks another question—and that is exactly the kind of curiosity the series encourages.",
   },
   {
     question: "What subjects are covered?",
     answer:
-      "The books explore science, nature, animals, space, the human body, technology, and everyday life.",
+      "A little bit of everything curious kids love: animals, space, science, nature, weather, the human body, technology, history, and the everyday world around us.",
   },
   {
     question: "Are the books fully illustrated?",
     answer:
-      "The series uses visual learning as an important part of how information is presented. See the individual book pages for more details about each volume.",
+      "Yes. Colorful illustrations, diagrams, and visual examples are a big part of every book. They help make new ideas easier—and much more fun—to understand.",
   },
   {
     question: "What is the Visual Whys Encyclopedia?",
     answer:
-      "The Visual Whys Encyclopedia is the broader series behind the individual books. It brings together curiosity-driven questions, explanations, and visual learning across multiple volumes.",
+      "It is the growing collection that brings all of the 100,000 Whys books together. Each volume uses real questions, clear answers, and memorable visuals to help children explore the world.",
   },
   {
     question: "How many books are in the series?",
     answer:
-      "The Visual Whys Encyclopedia currently includes three books: Volume 1, Volume 2, and 100,000 Whys for Toddlers: First Wonders.",
+      "There are currently three books: 100,000 Whys Volume 1, Volume 2, and 100,000 Whys for Toddlers: First Wonders. More discoveries are planned for the future.",
   },
   {
     question: "What is Volume 3?",
     answer:
-      "Volume 3 is 100,000 Whys for Toddlers: First Wonders, a bright first encyclopedia created for curious children ages 2–6.",
+      "Volume 3 is First Wonders, a bright first encyclopedia made for children ages 2–6. It introduces big ideas through simple questions, short answers, and playful pictures.",
   },
   {
     question: "What ages are the three books for?",
     answer:
-      "The original 100,000 Whys books are made for curious young readers, while 100,000 Whys for Toddlers: First Wonders is designed especially for ages 2–6.",
+      "Volumes 1 and 2 are designed for ages 6–13. First Wonders is for ages 2–6, with shorter explanations and illustrations made for little learners.",
   },
   {
     question: "Are these books useful for homeschooling?",
     answer:
-      "They can be used as an additional resource for curious learners, independent exploration, discussion, or supplemental learning.",
+      "Absolutely. Families can use them for read-aloud time, independent learning, project inspiration, or simply following a child’s latest curiosity.",
   },
   {
     question: "Are they suitable for reluctant readers?",
     answer:
-      "The question-based and visual approach is designed to make information approachable and encourage children to explore topics at their own pace.",
+      "Yes. The short, question-led sections and colorful visuals let children dip in wherever their interest takes them, without needing to read from beginning to end.",
   },
   {
     question: "How are the facts researched?",
     answer:
-      "More information about the research and fact-checking process will be added to the individual book pages as it is verified.",
+      "Every question and answer is carefully researched and fact-checked for accuracy. The explanations are then written in clear, age-appropriate language so children can understand the facts without losing the wonder behind them.",
   },
   {
     question: "Who is Elliott Wonder?",
     answer:
-      "Elliott Wonder is the author and brand behind the 100,000 Whys for Kids series, focused on making learning approachable, visual, and curiosity-driven.",
+      "Elliott Wonder is the author behind the 100,000 Whys series and a believer in one simple idea: the best learning often begins with a child asking “why?”",
   },
   {
     question: "Where can I buy the books?",
     answer:
-      "The current books are available through Amazon. Visit each book's page for the appropriate purchase link.",
+      "You can find the current books on Amazon. Each book card on this page has its own direct purchase link.",
   },
   {
     question: "Are more volumes planned?",
     answer:
-      "The Visual Whys Encyclopedia is intended to grow beyond the current volumes, with more curiosity and discoveries planned for the future.",
+      "Yes! The collection is meant to keep growing, with more questions, subjects, and discoveries to come.",
   },
   {
     question: "How can I receive updates?",
     answer:
-      "Join the Curious Kids Club to receive occasional updates, new book announcements, curiosity facts, and activities.",
+      "Join the Curious Kids Club for occasional book news, curiosity-filled facts, and activities for young explorers. The signup is for parents, guardians, and educators.",
   },
 ];
 
