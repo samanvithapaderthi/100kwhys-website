@@ -149,6 +149,10 @@ export default function Home() {
     setSamplePage((current) => (current + 1) % (samplePages.length + 1));
   };
 
+  const turnPageBack = () => {
+    setSamplePage((current) => Math.max(-1, current - 1));
+  };
+
   const handleSignup = (event: FormEvent<HTMLFormElement>) => {
     if (!email.trim() || !email.includes("@")) {
       event.preventDefault();
@@ -266,12 +270,15 @@ export default function Home() {
               <div className="cover-shadow" />
 
               <div className={`hero-book-viewer ${samplePage >= 0 ? "is-open" : ""}`}>
-                <img
-                  className="sample-page-image"
-                  src={samplePage >= 0 ? samplePages[samplePage].src : samplePages[0].src}
-                  alt={samplePage >= 0 ? samplePages[samplePage].alt : ""}
-                  aria-hidden={samplePage < 0}
-                />
+                {samplePages.map((page, index) => (
+                  <img
+                    key={page.src}
+                    className={`sample-page-image ${index < samplePage ? "is-flipped" : ""} ${index === samplePage ? "is-current" : ""}`}
+                    src={page.src}
+                    alt={page.alt}
+                    aria-hidden={index !== samplePage}
+                  />
+                ))}
                 <img
                   className="cover-image"
                   src={coverImage}
@@ -283,6 +290,16 @@ export default function Home() {
                 <Star size={15} fill="currentColor" /> Learn something
                 surprising.
               </div>
+
+              <button
+                className={`floating-note note-previous page-turn-button ${samplePage >= 0 ? "is-visible" : ""}`}
+                type="button"
+                onClick={turnPageBack}
+                aria-label="Turn back to the previous page"
+                tabIndex={samplePage >= 0 ? 0 : -1}
+              >
+                <ArrowRight className="arrow-back" size={14} /> Previous page
+              </button>
 
               <button
                 className="floating-note note-bottom page-turn-button"
