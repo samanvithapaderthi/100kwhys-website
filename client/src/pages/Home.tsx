@@ -67,11 +67,6 @@ const faqs = [
       "There are currently three books: 100,000 Whys Volume 1, Volume 2, and 100,000 Whys for Toddlers: First Wonders. More discoveries are planned for the future.",
   },
   {
-    question: "What is Volume 3?",
-    answer:
-      "Volume 3 is First Wonders, a bright first encyclopedia made for children ages 2–6. It introduces big ideas through simple questions, short answers, and playful pictures.",
-  },
-  {
     question: "What ages are the three books for?",
     answer:
       "Volumes 1 and 2 are designed for ages 6–13. First Wonders is for ages 2–6, with shorter explanations and illustrations made for little learners.",
@@ -286,11 +281,6 @@ export default function Home() {
                 />
               </div>
 
-              <div className="floating-note note-top">
-                <Star size={15} fill="currentColor" /> Learn something
-                surprising.
-              </div>
-
               <button
                 className={`floating-note note-previous page-turn-button ${samplePage >= 0 ? "is-visible" : ""}`}
                 type="button"
@@ -365,7 +355,6 @@ export default function Home() {
               >
                 <div className="volume-card-art">
                   <img src={coverImage} alt="Volume 1 cover of 100,000 Whys" />
-                  <span className="volume-number">01</span>
                 </div>
 
                 <div className="volume-card-copy">
@@ -380,12 +369,8 @@ export default function Home() {
                   </p>
 
                   <div className="volume-links">
-                    <a className="inline-link" href="#book-1">
-                      Explore Volume 1 <ArrowRight size={16} />
-                    </a>
-
                     <a
-                      className="inline-link"
+                      className="button button-sun amazon-button"
                       href="https://www.amazon.com/100-000-Whys-Kids-Encyclopedia/dp/B0H2B1DH6L/"
                       target="_blank"
                       rel="noreferrer"
@@ -405,10 +390,6 @@ export default function Home() {
                     src={volume2Cover}
                     alt="Volume 2 cover of 100,000 Whys for Kids"
                   />
-                  <span className="volume-number">02</span>
-                  <span className="coming-soon">
-                    100 completely new WHY questions
-                  </span>
                 </div>
 
                 <div className="volume-card-copy">
@@ -427,12 +408,8 @@ export default function Home() {
                   </p>
 
                   <div className="volume-links">
-                    <a className="inline-link" href="#book-2">
-                      Explore Volume 2 <ArrowRight size={16} />
-                    </a>
-
                     <a
-                      className="inline-link"
+                      className="button button-sun amazon-button"
                       href="https://www.amazon.com/gp/product/B0HC7ZKVSB"
                       target="_blank"
                       rel="noreferrer"
@@ -452,8 +429,6 @@ export default function Home() {
                     src={toddlersCover}
                     alt="100,000 Whys for Toddlers: First Wonders book cover"
                   />
-                  <span className="volume-number">03</span>
-                  <span className="coming-soon">For ages 2–6</span>
                 </div>
 
                 <div className="volume-card-copy">
@@ -467,12 +442,8 @@ export default function Home() {
                   </p>
 
                   <div className="volume-links">
-                    <a className="inline-link" href="#book-3">
-                      Explore Volume 3 <ArrowRight size={16} />
-                    </a>
-
                     <a
-                      className="inline-link"
+                      className="button button-sun amazon-button"
                       href="https://www.amazon.com/100000-Whys-Toddlers-Encyclopedia/dp/B0HG4BLDTH"
                       target="_blank"
                       rel="noreferrer"
@@ -586,19 +557,12 @@ export default function Home() {
 
               <p>
                 Behind 100,000 Whys for Kids is Elliott Wonder who believes the
-                best learning starts with a question.
-              </p>
-
-              <p>
-                Elliott Wonder creates books for curious young readers who want
-                to know how, why, and what if. Each book takes the questions
-                children naturally ask and turns them into opportunities to
-                explore, discover, and see the world in a new way.
-              </p>
-
-              <p>
-                Because learning doesn’t have to end with an answer. Sometimes,
-                the best answer is another question.
+                best learning starts with a question. Elliott Wonder creates
+                books for curious young readers who want to know how, why, and
+                what if. Each book takes the questions children naturally ask
+                and turns them into opportunities to explore, discover, and see
+                the world in a new way. Because learning doesn’t have to end
+                with an answer. Sometimes, the best answer is another question.
               </p>
 
               <a
