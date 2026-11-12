@@ -12,6 +12,35 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://100000whysforkids.com/" />
     <title>100,000 Whys for Kids — Big questions. Bright answers.</title>
+    <script>
+      (function (window, document) {
+        if (window.oaiq) return;
+        function queue() {
+          queue.q.push(arguments);
+        }
+        queue.q = [];
+        window.oaiq = queue;
+
+        const sdk = document.createElement("script");
+        sdk.async = true;
+        sdk.src = "https://bzrcdn.openai.com/sdk/oaiq.min.js";
+        document.head.appendChild(sdk);
+      })(window, document);
+
+      window.oaiq("init", { pixelId: "BXiS9T5eAnrZhRs6vJdpBy", debug: true });
+
+      document.addEventListener("click", function (event) {
+        const link = event.target.closest?.("a[href]");
+        if (!link || typeof window.oaiq !== "function") return;
+
+        const host = link.hostname;
+        if (host === "amazon.com" || host.endsWith(".amazon.com")) {
+          window.oaiq("measure", "custom", { type: "custom" }, {
+            custom_event_name: "outbound_click"
+          });
+        }
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
